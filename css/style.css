@@ -11,6 +11,8 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   font-family: inherit;
+  
+  outline: none;
 }
 
 .clearfix:after {
@@ -40,7 +42,7 @@ i.icon-basket {
 
 body {
   background-color: #e5e5e5;
-  /*background: url('../img/design.png') no-repeat center top;*/
+  /*background: url('../img/design-light.png') no-repeat center top;*/
 }
 
 .container {
@@ -120,22 +122,24 @@ body {
   border-right: none;
   line-height: 36px;
   padding: 2px 10px;
-  margin-right: -4px;
+  margin: 0 -4px 0 0;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .page-header form input[type="search"]:focus,
 .page-header form:hover input[type="search"] {
-  display: inline;
+  display: inline-block;
 }
 
 .page-header form input[type="submit"] {
   border: 1px solid #959595;
   display: inline-block;
+  vertical-align: middle;
   width: 42px;
   height: 42px;
-  background: transparent url(../img/search-icon.png) center no-repeat;
-  text-indent: -9999px
+  background: transparent url(../img/search-icon.png) no-repeat center;
+  text-indent: -9999px;
 }
 
 main header {
@@ -177,4 +181,100 @@ main header a {
 main header a:hover {
   background-color: #303030;
   color: #fff;
+}
+
+main section article {
+  float: left;
+  width: 25%;
+  height: 295px;
+  color: #fff;
+  text-align: center;
+  line-height: 295px;
+}
+
+main section article .article-content {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+main section article h1,
+main section article h2,
+main section article p {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+main section article h1,
+main section article h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+main section article.article-big {
+  height: 590px;
+  line-height: 590px;
+}
+
+main section article.article-big h1 {
+  padding: 0 58px;
+}
+
+main section article.article-category h1:before {
+  content: "";
+  display: block;
+  background: url(../img/left-arrow-icon.png) no-repeat center;
+  height: 13px;
+  margin-bottom: 4px;
+  position: relative;
+  top: -6px;
+}
+
+main section article.article-category p,
+main section article.article-product p {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+main section article.article-tweet h1 {
+  text-indent: -9999px;
+  display: inline-block;
+  background: url(../img/twitter-icon.png) no-repeat center;
+  width: 99px;
+  height: 25px;
+}
+
+main section article.article-tweet blockquote,
+main section article.article-tweet p {
+  font-size: 14px;
+}
+
+main section article.article-tweet blockquote {
+  margin: 26px 0 14px;
+  padding: 0 58px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+main section article.article-tweet p {
+  font-family: inherit;
+  text-transform: inherit;
+  font-weight: bold;
+}
+
+main section article:nth-child(1) { background-color: #d2d2d2; }
+main section article:nth-child(2) { background-color: #bbbbbb; }
+main section article:nth-child(3) { background-color: #dbdbdb; }
+main section article:nth-child(4) { background-color: #606060; }
+main section article:nth-child(5) { background-color: #cacaca; }
+main section article:nth-child(6) { background-color: #bbbbbb; }
+main section article:nth-child(7) { background-color: #d7d7d7; }
+main section article:nth-child(8) { background-color: #c2c2c2; }
+main section article:nth-child(9) { background-color: #606060; }
+main section article:nth-child(10) { background-color: #d0d0d0; }
+
+main section article:nth-child(7) {
+  margin-bottom: -295px;
 }
