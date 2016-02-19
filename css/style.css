@@ -183,7 +183,8 @@ main header a:hover {
   color: #fff;
 }
 
-main section article {
+main section article,
+main section .article-spacer {
   float: left;
   width: 25%;
   height: 295px;
@@ -265,16 +266,16 @@ main section article.article-tweet p {
   font-weight: bold;
 }
 
-main section article:nth-child(1) { background-color: #d2d2d2; }
-main section article:nth-child(2) { background-color: #bbbbbb; }
-main section article:nth-child(3) { background-color: #dbdbdb; }
-main section article:nth-child(4) { background-color: #606060; }
-main section article:nth-child(5) { background-color: #cacaca; }
-main section article:nth-child(6) { background-color: #bbbbbb; }
-main section article:nth-child(7) { background-color: #d7d7d7; }
-main section article:nth-child(8) { background-color: #c2c2c2; }
-main section article:nth-child(9) { background-color: #606060; }
-main section article:nth-child(10) { background-color: #d0d0d0; }
+main section > *:nth-child(1) { background-color: #d2d2d2; }
+main section > *:nth-child(2) { background-color: #bbbbbb; }
+main section > *:nth-child(3) { background-color: #dbdbdb; }
+main section > *:nth-child(4) { background-color: #606060; }
+main section > *:nth-child(5) { background-color: #cacaca; }
+main section > *:nth-child(6) { background-color: #bbbbbb; }
+main section > *:nth-child(7) { background-color: #d7d7d7; }
+main section > *:nth-child(8) { background-color: #c2c2c2; }
+main section > *:nth-child(9) { background-color: #606060; }
+main section > *:nth-child(10) { background-color: #d0d0d0; }
 
 main section article:nth-child(7) {
   margin-bottom: -295px;
