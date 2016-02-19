@@ -254,8 +254,9 @@ main section article.article-tweet p {
 
 main section article.article-tweet blockquote {
   margin: 26px 0 14px;
-  padding: 0 58px;
+  width: 203px;
   font-family: Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
 }
 
 main section article.article-tweet p {
