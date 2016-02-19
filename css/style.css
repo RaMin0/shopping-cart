@@ -40,10 +40,11 @@ i.icon-basket {
 
 body {
   background-color: #e5e5e5;
+  background: url('../img/design.png') no-repeat center top;
 }
 
 .container {
-  background-color: #fff;
+  /*background-color: #fff;*/
   max-width: 1244px;
   margin: 61px auto 80px;
   padding: 0 32px 36px;
@@ -81,6 +82,7 @@ body {
 .page-header nav li {
   line-height: 42px;
   font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 .page-header nav a {
@@ -103,7 +105,7 @@ body {
 
 .user-nav li {
   float: left;
-  margin-right: 51px;
+  margin-right: 48px;
 }
 
 .page-header form {
@@ -134,4 +136,45 @@ body {
   height: 42px;
   background: transparent url(../img/search-icon.png) center no-repeat;
   text-indent: -9999px
+}
+
+main header {
+  text-align: center;
+  padding: 134px 0 150px;
+}
+
+main header h1 {
+  margin: 0;
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #303030;
+  letter-spacing: 3px;
+}
+
+main header p {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #606060;
+  margin: 9px 0 0;
+  letter-spacing: 1.2px;
+}  
+
+main header a {
+  display: inline-block;
+  line-height: 58px;
+  border: 1px solid #959595;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  color: #303030;
+  width: 229px;
+  margin-top: 67px;
+  letter-spacing: 0.9px;
+}
+
+main header a:hover {
+  background-color: #303030;
+  color: #fff;
 }
