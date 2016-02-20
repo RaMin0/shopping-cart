@@ -42,7 +42,7 @@ i.icon-basket {
 
 body {
   background-color: #e5e5e5;
-  /*background: url('../img/design-light.png') no-repeat center top;*/
+  /*background: url(../img/design-light.png) no-repeat center top; height: 2500px;*/
 }
 
 .container {
@@ -293,7 +293,7 @@ main section article:nth-child(8) {
 
 main footer {
   text-align: center;
-  padding: 139px 0 132px;
+  padding: 139px 0 45px;
 }
 
 main footer h2 {
@@ -383,3 +383,94 @@ main footer section ul {
   height: 118px;
   margin: -118px 39px 0;
 }
+
+.page-footer {
+  color: #303030;
+}
+
+.page-footer h1 {
+  position: absolute;
+  left: -9999px;
+}
+
+.page-footer nav {
+  height: 159px;
+  width: 25%;
+  float: left;
+  border-right: 1px solid #eaeaea;
+  padding: 0 20px;
+}
+
+.page-footer nav:nth-child(2) {
+  padding-left: 0;
+}
+
+.page-footer nav:last-child {
+  border-right: none;
+}
+
+.page-footer h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.page-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer li {
+  line-height: 21px;
+}
+
+.page-footer a {
+  font-size: 12px;
+  color: #303030;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.page-footer a:hover {
+  text-decoration: underline;
+}
+
+.page-footer p {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.page-footer .social-icons {
+  margin-top: 23px;
+}
+
+.page-footer .social-icons li {
+  border: 1px solid #606060;
+  margin-left: 14px;
+  float: left;
+}
+
+.page-footer .social-icons li:first-child {
+  margin-left: 0;
+}
+
+.page-footer .social-icons a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  background: url(../img/social-icons-sprite.png) no-repeat;
+}
+
+.page-footer .social-icons a:hover {
+  background-color: #606060;
+}
+
+.page-footer .social-icons .footer-twitter a { background-position: 0 0; }
+.page-footer .social-icons .footer-twitter a:hover { background-position: 0 -32px; }
+.page-footer .social-icons .footer-facebook a { background-position: -32px 0; }
+.page-footer .social-icons .footer-facebook a:hover { background-position: -32px -32px; }
+.page-footer .social-icons .footer-instagram a { background-position: -64px 0; }
+.page-footer .social-icons .footer-instagram a:hover { background-position: -64px -32px; }
